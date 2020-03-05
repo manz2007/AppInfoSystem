@@ -12,7 +12,7 @@
   
   
   
-  <!-- 配置Spring配置文件文字 -->
+  <!-- 配置Spring配置文件位置 -->
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:applicationContext-*.xml</param-value>
@@ -51,6 +51,7 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
   
+  <!-- 监听Spring配置文件 -->
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
